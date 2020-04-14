@@ -1,7 +1,5 @@
 # The Calendar project
 
-_Acá va 
-
 ## Comenzando 🚀
 
 Para instalar las dependencias
