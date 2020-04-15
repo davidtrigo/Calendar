@@ -38,7 +38,7 @@ export class PubSub{
         }else{
             suscriptors.push(cb);
         }
-        const disposable ()=>{
+      const  disposable =()=>{
             let indexOf = suscriptors.indexOf(cb);
             if(indexOf!==1){
                suscriptors.splice(indexOf,1);
