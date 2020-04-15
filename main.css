@@ -1,0 +1,10 @@
+:root{
+    temas-- definir custon css properties
+    --calendar-color:white;
+    --calendar-background:black
+}
+
+:host{
+    color:var(--calendar-color);
+    backgroup:var(--calendar-background);
+}
