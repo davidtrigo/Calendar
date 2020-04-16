@@ -20,13 +20,8 @@ class DayOfWeek extends LitElement{
     }
 
     render() {
-        let days = CULTURE[CONFIG.culture].daysOfWeek;
-        let DayOfWeek = document.createElement('div');
-        days.forEach(d => {
-            let div = document.createElement('div');
-            div.appendChild(document.createTextNode(d))
-            DayOfWeek.appendChild(div);
-        });
+        //https://lit-element.polymer-project.org/guide/templates#use-properties-loops-and-conditionals-in-a-template
+        //loop
         return html `${DayOfWeek}`;
      }
 }
