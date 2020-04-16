@@ -1,7 +1,6 @@
 
 import { LitElement, html, css } from 'lit-element'
 import { flexcolumn } from '../css/flexcolumn.js'
-import { } from './dayofweek.js'
 import { } from './header.js'
 import { } from './body.js'
 class Calendar extends LitElement {
@@ -25,6 +24,6 @@ class Calendar extends LitElement {
             <bcn-calendar-header></bcn-calendar-header>
             <bcn-calendar-body></bcn-calendar-body>
         `
-    }
+    } 
 }
 customElements.define('bcn-calendar', Calendar);
