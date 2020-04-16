@@ -1,9 +1,9 @@
 
 :root{
-    --first-color:white;
-    --second-color:black;
-    --third-color: blue;
-    --fourth-color: gray;
+    --calendar-color: white;
+    --calendar-background:  black;
+    --calendar-secondary-color: blue;
+    --calendar-greyed-color: grey;
   }
   
   /* http://meyerweb.com/eric/tools/css/reset/
