@@ -9,7 +9,7 @@ class CurrentDate extends CurrentTextElement{
     static get styles() {
         return css`
             :host{
-                color:var(--third-color);
+                color:var(--calendar-secondary-color);
             }
         `;
     }

@@ -9,8 +9,8 @@ class Calendar extends LitElement {
             flexcolumn,
             css`
                 :host{
-                    color:var(--first-color);
-                    background-color: var(--second-color);
+                    color:var(--calendar-color);
+                    background-color:var(--calendar-background);
                     cursor: default;
                     user-select: none;
                     width:20rem;
