@@ -5,12 +5,6 @@ class DayOfWeek extends LitElement{
 
     static get styles() {
         return css`
-        :host{
-            display:grid; 
-            grid-template-columns: repeat(7,40px);
-            gap:2px;
-            height:40px;
-        }
         div{
             display: flex;
             justify-content: center;
@@ -20,9 +14,9 @@ class DayOfWeek extends LitElement{
     }
 
     render() {
-        //https://lit-element.polymer-project.org/guide/templates#use-properties-loops-and-conditionals-in-a-template
-        //loop
-        return html `${DayOfWeek}`;
+        return html `<div class="dayOfWeek">
+            ${CULTURE[CONFIG.culture].daysOfWeek.map(day => html`<div>${day}</div>`)}
+        </div>`;
      }
 }
 
