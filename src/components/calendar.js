@@ -1,6 +1,7 @@
 
 import { LitElement, html, css } from 'lit-element'
 import { flexcolumn } from '../css/flexcolumn.js'
+import { } from './dayofweek.js'
 import { } from './header.js'
 class Calendar extends LitElement {
     static get styles() {
