@@ -20,7 +20,7 @@ export const MixinPubSub = Base => class extends Base {
     }
 }
 
-export const MiximDisposable = Base => class extends Base {
+export const Disposables = Base => class extends Base {
     #disposables = [];
     get disposables() {
         return this.#disposables

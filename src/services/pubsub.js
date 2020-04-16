@@ -2,8 +2,8 @@ export class PubSub{
     constructor(){
         this._map = new Map();
     }
-    pub(chanel,data){
-        let suscriptors = this._map.get(chanel);
+    pub(channel,data){
+        let suscriptors = this._map.get(channel);
         suscriptors && suscriptors.forEach(suscriptor => {
             suscriptor(Object.freeze(data));
         });
@@ -22,19 +22,19 @@ export class PubSub{
      *         #disposables.forEach(dispose=>dispose())
      *      }
      * }
-     * @param {*} chanel 
+     * @param {*} channel 
      * @param {*} cb 
      * @param {*} thisArgs 
      * @param {*} disposables 
      */
-    sub(chanel,cb,thisArgs=null,disposables=[]){
+    sub(channel,cb,thisArgs=null,disposables=[]){
         if(thisArgs){
             cb.bind(thisArgs);
         }
-        let suscriptors = this._map.get(chanel);
+        let suscriptors = this._map.get(channel);
         if(!suscriptors){
             suscriptors=[cb]
-            this._map.set(chanel,suscriptors);
+            this._map.set(channel,suscriptors);
         }else{
             suscriptors.push(cb);
         }
