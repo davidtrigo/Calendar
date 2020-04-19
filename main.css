@@ -2,7 +2,7 @@
 :root{
     --calendar-color: white;
     --calendar-background:  black;
-    --calendar-secondary-color: blue;
+    --calendar-secondary-color: rgb(0, 89, 255);
     --calendar-greyed-color: grey;
   }
   
