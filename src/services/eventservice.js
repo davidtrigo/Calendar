@@ -1,5 +1,4 @@
 import {EVENTDATA} from './eventfake.js'
-//import { FormatDate } from '../formatdate.js';
 
 function formatDate(date){
     let y=date.getFullYear().toString();
@@ -9,6 +8,5 @@ function formatDate(date){
 }
 
 export var EventService = async function (date){
-    //return EVENTDATA[formatDate(date)];
     return EVENTDATA[formatDate(date)];
 }
