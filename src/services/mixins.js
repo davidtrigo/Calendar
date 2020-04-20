@@ -1,7 +1,6 @@
 export const MixinPubSub = Base => class extends Base {
     #pubsub;
-    #mixinvar;
-    connectedCallback() {
+    getPub() {
         if (!this.#pubsub) {
             let event = new CustomEvent('getpub', {
                 bubbles: true,
@@ -29,6 +28,5 @@ export const Disposables = Base => class extends Base {
         this.#disposables.forEach(dispose => dispose())
     }
 }
-
 
 
