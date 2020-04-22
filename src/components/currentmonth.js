@@ -9,7 +9,7 @@ class CurrentMonth extends MixinPubSub (CurrentTextElement) {
         super(CHANNELS.CHANGEMONTH, FormatDate.getCurrentMonth);
     }
 
-   
+   //https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Classes
 
     changeManualMonth(dif) {
         this.date = DateService.getNextOrPreviosMonth(this.date, dif)

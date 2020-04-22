@@ -16,6 +16,7 @@ class CalendarBody extends LitElement {
        return html`
             <bcn-dayofweek></bcn-dayofweek>
             <bcn-currentmonth></bcn-currentmonth>
+            <bcn-calendarbutton></bcn-calendarbutton>
            `
     }
 }
